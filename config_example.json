@@ -51,6 +51,22 @@
     },
 
     "switching": {
+		"switch0": {
+            "enabled": false,
+            "algorithm": "groestl",
+            "ports": {
+                "3333": {
+                    "diff": 10,
+                    "varDiff": {
+                        "minDiff": 16,
+                        "maxDiff": 512,
+                        "targetTime": 15,
+                        "retargetTime": 90,
+                        "variancePercent": 30
+                    }
+                }
+            }
+        },
         "switch1": {
             "enabled": false,
             "algorithm": "sha256",
